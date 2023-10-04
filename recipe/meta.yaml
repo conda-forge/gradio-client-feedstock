@@ -1,5 +1,5 @@
 {% set name = "gradio-client" %}
-{% set version = "0.0.5" %}
+{% set version = "0.5.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gradio_client-{{ version }}.tar.gz
-  sha256: dc6479a119314aac0bbf6821da6e946df17f048cc571559379a89590618f7b5d
+  sha256: 5f7f8c25c7d963a3ec805e135030a2283eea49dd4fc0c69c6b119ae56b33bc6b
 
 build:
   noarch: python
@@ -22,12 +22,14 @@ requirements:
     - hatch-fancy-pypi-readme >=22.5.0
     - pip
   run:
-    - python >=3.7
+    - python >=3.8
     - fsspec
+    - httpx
     - huggingface_hub >=0.13.0
     - packaging
-    - requests
-    - websockets
+    - requests ~=2.0
+    - typing_extensions ~=4.0
+    - websockets >=10.0,<12.0
 
 test:
   imports:
