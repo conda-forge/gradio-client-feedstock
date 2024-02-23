@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -24,7 +24,7 @@ requirements:
   run:
     - python >=3.8
     - fsspec
-    - httpx
+    - httpx >=0.24.1
     - huggingface_hub >=0.19.3
     - packaging
     - typing_extensions ~=4.0
