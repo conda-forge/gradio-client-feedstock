@@ -1,5 +1,5 @@
 {% set name = "gradio-client" %}
-{% set version = "1.5.4" %}
+{% set version = "1.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/gradio_client-{{ version }}.tar.gz
-  sha256: 281a1b6c4e45210c70b60888bb6f329c27f30645d7aa376e1f20966de82273dc
+  sha256: 1c6fae52181d483c010cfbc4e4df8520da33ab4365ab412acabc798d7022ad98
 
 build:
   noarch: python
