@@ -145,6 +145,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@abidlabs](https://github.com/abidlabs/)
 * [@Sclare87](https://github.com/Sclare87/)
+* [@abidlabs](https://github.com/abidlabs/)
 

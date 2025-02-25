@@ -1,5 +1,5 @@
 {% set name = "gradio-client" %}
-{% set version = "1.7.0" %}
+{% set version = "1.7.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/gradio_client-{{ version }}.tar.gz
-  sha256: 87f6ade197951f38bac0431b2a436a8ebb2f33b2ceba2ef8e1e5bef8d8b238e4
+  sha256: e3f1e1a63292a06a22a748719849bc6dbacdc89645f089c219f3d7a24e68d183
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -28,7 +28,7 @@ requirements:
     - huggingface_hub >=0.19.3
     - packaging
     - typing_extensions ~=4.0
-    - websockets >=10.0,<13.0
+    - websockets >=10.0,<16.0
 
 test:
   imports:
