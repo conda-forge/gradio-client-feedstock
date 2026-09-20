@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "2.7.0"
+  version: "2.7.1"
 
 package:
   name: gradio-client
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/g/gradio-client/gradio_client-${{ version }}.tar.gz
-  sha256: 212c88f7f6a212c973b4429ec450b35efba7805a34aee53f0892535ceee194ae
+  sha256: 2c629110496dbca67a848cd70add8cf5c3a24776404a2c5ef4fd759c7c2c33c4
 
 build:
   noarch: python
