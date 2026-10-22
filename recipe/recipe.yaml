@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
@@ -27,7 +27,7 @@ requirements:
     - python >=${{ python_min }}
     - fsspec
     - httpx >=0.24.1
-    - huggingface_hub >=0.19.3,<2.0
+    - huggingface_hub >=0.19.3,<3.0
     - packaging
     - typing_extensions ~=4.0
 
